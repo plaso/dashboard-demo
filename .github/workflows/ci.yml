@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install
-        run: yarn i
+        run: yarn install --frozen-lockfile
 
       - name: Test
         run: yarn test
