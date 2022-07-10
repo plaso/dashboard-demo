@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import Sidebar from './components/Sidebar';
+import Spinner from './components/Spinner';
+import NewNomination from './views/NewNomination/NewNomination';
+import Nominations from './views/Nominations/Nominations';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-slate-100 min-h-screen">
+      <Sidebar />
+
+      <div className="ml-60 p-8">
+        <React.Suspense fallback={<Spinner />}>
+          <Routes>
+            <Route index element={<Nominations />} />
+            <Route path="new" element={<NewNomination />} />
+          </Routes>
+        </React.Suspense>
+      </div>
     </div>
   );
 }

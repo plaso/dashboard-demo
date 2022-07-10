@@ -1,0 +1,50 @@
+[
+  {
+    "id": "8c8ff55c-11f5-4b3c-8596-3d9831a8934d",
+    "description": "Description of the candidate",
+    "email": "john@gmail.com",
+    "referrer": "8c8ff55c-11f5-4b3c-8596-3d9831a8934e",
+    "score": {
+      "talent": 8,
+      "involvement": 8
+    },
+    "dateReferred": "2022-07-20T08:40:58.200Z",
+    "status": "PENDING"
+  },
+  {
+    "id": "8c8ff55c-11f5-4b3c-8596-3d9831a8934h",
+    "description": "Description of the candidate",
+    "email": "annie@gmail.com",
+    "referrer": "8c8ff55c-11f5-4b3c-8596-3d9831a8934e",
+    "score": {
+      "talent": 8,
+      "involvement": 8
+    },
+    "dateReferred": "2022-07-20T08:40:58.200Z",
+    "status": "PENDING"
+  },
+  {
+    "id": "8c8ff55c-11f5-4b3c-8596-3d9831a8934i",
+    "description": "Description of the candidate",
+    "email": "chris@gmail.com",
+    "referrer": "8c8ff55c-11f5-4b3c-8596-3d9831a8934e",
+    "score": {
+      "talent": 8,
+      "involvement": 8
+    },
+    "dateReferred": "2022-07-20T08:40:58.200Z",
+    "status": "PENDING"
+  },
+  {
+    "id": "8c8ff55c-11f5-4b3c-8596-3d9831a8934j",
+    "description": "Description of the candidate",
+    "email": "mike@gmail.com",
+    "referrer": "8c8ff55c-11f5-4b3c-8596-3d9831a8934e",
+    "score": {
+      "talent": 8,
+      "involvement": 8
+    },
+    "dateReferred": "2022-07-20T08:40:58.200Z",
+    "status": "PENDING"
+  }
+]
