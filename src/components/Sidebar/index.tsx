@@ -13,7 +13,7 @@ function SidebarLink({ text, to }: SidebarLinkProps) {
   return (
     <li>
       <NavLink to={to} className={({ isActive }) => `rounded-lg flex items-center p-2 text-base font-normal mb-1 ${isActive ? activeClassNames : defaultClassNames}`}>
-        <span className="ml-3">{text}</span>
+        <span className="md:ml-3">{text}</span>
       </NavLink>
     </li>
   )
@@ -21,10 +21,10 @@ function SidebarLink({ text, to }: SidebarLinkProps) {
 
 function Sidebar() {
   return (
-    <aside className="hidden md:block fixed w-60 h-screen p-4 shadow-md bg-white">
-      <img className="h-10" src={logo} alt="Nova" />
+    <aside className="flex items-center justify-between px-4 md:block md:fixed md:w-60 w-full h-14 md:h-screen md:p-4 shadow-md bg-white">
+      <img className="h-6 md:h-10" src={logo} alt="Nova" />
 
-      <ul className="mt-6">
+      <ul className="flex md:mt-6 md:block">
         <SidebarLink text="Nominations" to="/" />
         <SidebarLink text="New nomination" to="new" />
       </ul>
