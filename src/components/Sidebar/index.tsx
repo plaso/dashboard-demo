@@ -21,7 +21,7 @@ function SidebarLink({ text, to }: SidebarLinkProps) {
 
 function Sidebar() {
   return (
-    <aside className="fixed w-60 h-screen p-4 shadow-md bg-white">
+    <aside className="hidden md:block fixed w-60 h-screen p-4 shadow-md bg-white">
       <img className="h-10" src={logo} alt="Nova" />
 
       <ul className="mt-6">

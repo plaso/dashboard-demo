@@ -10,7 +10,7 @@ function App() {
     <div className="App bg-slate-100 min-h-screen">
       <Sidebar />
 
-      <div className="ml-60 p-8">
+      <div className="md:ml-60 p-8">
         <React.Suspense fallback={<Spinner />}>
           <Routes>
             <Route index element={<Nominations />} />
