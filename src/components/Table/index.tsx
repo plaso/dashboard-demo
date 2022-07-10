@@ -22,7 +22,7 @@ function Table({ nominations }: TableProps) {
         </thead>
         <tbody>
           {nominations.map(({ id, email, referrer, score: { involvement, talent }, status, dateReferred }) => (
-            <tr key={id} className="bg-white border-b hover:bg-gray-50">
+            <tr key={id} className="bg-white border-b hover:bg-gray-50" role="row">
               <td className="px-6 py-4">{email}</td>
               <td className="px-6 py-4">{referrer}</td>
               <td className="px-6 py-4">{talent} - {involvement}</td>

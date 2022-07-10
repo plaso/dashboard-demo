@@ -1,24 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { QueryClient, QueryClientProvider } from 'react-query'
+import { QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
-import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { AuthContextProvider } from './contexts/AuthContext'
+import { createQueryClient } from './utils'
+import './index.css'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )
 
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      suspense: true
-    }
-  }
-})
+const queryClient = createQueryClient()
 
 root.render(
   <React.StrictMode>
